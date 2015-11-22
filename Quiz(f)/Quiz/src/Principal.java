@@ -4,13 +4,11 @@ public class Principal {
 
 	 public static Scanner keyboard;
 
-	 private static String  nom;
+	  private static int peso;
      private int opc;
 	 private static String cadena="";
 	 private static char seguir = 'S';
-     private static int peso;
-	
-
+  
 	public static void main(String[] args) {
 		
 		while ((seguir=='s') | (seguir=='S')){
@@ -28,8 +26,7 @@ public class Principal {
 		    Scanner keyboard = new Scanner(System.in);
 		    System.out.print("\nIngrese una opción:");
 		    opc = keyboard.nextInt();
-		    		    
-			
+
 			switch (opc){ 
          	case 1:
          		System.out.println("Eligio crear una Boa");
@@ -69,16 +66,15 @@ public class Principal {
 				System.out.printf("\n\n\t\t¿Desea continuar? s/n : ");
 				cadena=keyboard.nextLine();
 			    seguir=cadena.charAt(0);
-			    System.out.printf("\n\n\n");  		    
-			       			
+			    System.out.printf("\n\n\n");  		    		       			
 	}
 			System.out.println("La suma es: "+peso );
-			 if (peso>=15)
-				 System.out.println("MURIO LA BOA");
-			 else if(peso<2)
-				 System.out.println("MURIO LA BOA");
-			 
-			 System.out.println("\n********************");
+		
 		}
+		 if (peso>=15)
+			 System.out.println("MURIO LA BOA");
+		 else if(peso<2)
+			 System.out.println("MURIO LA BOA");
+		 System.out.println("\n********************"); 
 	}
 }
