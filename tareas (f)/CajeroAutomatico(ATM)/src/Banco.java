@@ -22,10 +22,6 @@ public class Banco {
 		cadena=keyboard.nextLine();
 	    seguir=cadena.charAt(0);
 	    System.out.printf("\n\n\n"); 
-	    
-	    Principal p = new Principal();
-	    String[] args = null;
-		Principal.main(args);
 		}	
 	}
 	public void mal(){
